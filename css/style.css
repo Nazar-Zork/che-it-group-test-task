@@ -114,13 +114,13 @@ button{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
-
-
+/* .header__menuDropdownLinks{
+    padding-top: 2px;
+} */
 .dropdown__link {
 	display: block;
 	width: 100%;
-	padding: 10px 14px;
+	padding: 10px 15px;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 18px;
@@ -134,7 +134,7 @@ button{
 	color: #1F1C4E;
 }
 .header__menuDropBtn{
-    padding-right: 19px;
+    padding-right: 17px;
 }
 
 /*----Language Switcher-----*/
@@ -176,19 +176,16 @@ button{
     background: #F5F5F5;
     height: 100%;
     filter: drop-shadow(-4px 0 10px rgba(0, 0, 0, 0.1));
-    padding: 30px 30px;
+    padding: 22px 30px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 .mobileMenu__close{
     position: absolute;
     top: 20px;
     right: 30px;
     cursor: pointer;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 28px;
 }
 .mobileMenu__close::before{
     transform: rotate(-45deg);
@@ -198,10 +195,11 @@ button{
     right: 0;
 }
 .mobileMenu__heading{
+    display: inline-block;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    margin-bottom:15px;
+    margin-bottom:10px;
     border-bottom: 4px solid #1F1C4E;
     padding-bottom: 5px;
 }
@@ -282,7 +280,7 @@ button{
 
 
 .faq{
-    padding: 60px 0 71px;
+    padding: 60px 15px 71px;
 }
 .faq__container{
     max-width: 670px;
