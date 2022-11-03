@@ -82,6 +82,7 @@ button{
 	cursor: pointer;
 	border-bottom: 4px solid transparent;
 }
+
 .header__menuDropBtnText{
     margin-right: 9px;
 }
@@ -90,11 +91,15 @@ button{
     line-height: 24px;
     color: #707683;
 }
-.header__menuItemBtn_active {
-	border-color: #4EAEFA;
+.header__menuItem:hover .header__menuItemBtn{
+    border-color: #4EAEFA;
 }
-.header__menuItemBtn_active .header__menuItemBtnText{
+.header__menuItem:hover .header__menuItemBtnText{
     color: #1F1C4E;
+}
+.header__menuItem:hover .header__menuDropdown{
+	opacity: 1;
+	visibility: visible;
 }
 .header__menuDropdown {
 	position: absolute;
@@ -110,10 +115,7 @@ button{
     overflow: hidden;
 }
 
-.header__menuDropdown_active {
-	opacity: 1;
-	visibility: visible;
-}
+
 
 .dropdown__link {
 	display: block;

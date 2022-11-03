@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+	
+	document.querySelector('.header__mobileMenuBtn').addEventListener('click', () =>{
+		document.querySelector('.mobileMenu').classList.toggle('mobileMenu_active');
+	})
+	document.querySelector('.mobileMenu__close').addEventListener('click', () =>{
+		document.querySelector('.mobileMenu').classList.toggle('mobileMenu_active');
+	})
+
 	const accordions = document.querySelectorAll('.faq__accordionItem');
 
 	accordions.forEach(el => {
@@ -9,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			self.classList.toggle('open');
 
-			// если открыт аккордеон
 			if (self.classList.contains('open')) {
 				control.setAttribute('aria-expanded', true);
 				content.setAttribute('aria-hidden', false);
